@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестування логічного елемента "Виключаюче АБО"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Перевірка знання таблиці істинності логічного елемента "Виключаюче АБО"</h1>
+    <p>Виберіть правильний результат на основі таблиці істинності</p>
+    
+    <div id="truthTable">
+        <table>
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>A XOR B</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <form id="testForm">
+        <label for="inputA">A:</label>
+        <select id="inputA">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select>
+        <label for="inputB">B:</label>
+        <select id="inputB">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select>
+        <label for="inputResult">Результат:</label>
+        <select id="inputResult">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select>
+        <button type="button" id="checkButton">Перевірити</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
